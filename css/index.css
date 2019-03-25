@@ -90,6 +90,7 @@ header nav a {
   text-decoration: none;
 }
 
+/* Move picture before nav */
 @media (max-width: 800px) {
     header {
         display: flex;
@@ -97,21 +98,18 @@ header nav a {
         justify-content: center;
     }
 
-    /* .cta img {
-        display: none;
-    } */
-
     .logo {
         order: -1;
         width: 20%;
         /* margin:0 auto; */
         margin:0 36%;
-        margin-bottom:5%;
+        margin-bottom:3%;
 
     }
 
 }
 
+/* Centering */
 @media (max-width: 500px) {
     .logo {
         text-align:center;
@@ -119,14 +117,24 @@ header nav a {
 
 }
 
+/* Nav elements to align and have borders */
 @media (max-width: 500px) {
     header nav a {
         display:block;
         font-size:20px;
         border-bottom:1px solid black;
-
+        padding: 3% 0;
+        text-align:center;
+        margin-right:0;
     }
-   
+    
+    header nav a:first-child {
+        border-top:1px solid black;
+    }
+
+    header .logo {
+        margin-left:347px;
+      }
 
 }
 
@@ -143,6 +151,7 @@ header nav a:last-child {
   margin-right: 0;
 }
 
+/* Header alignment */
 @media (max-width: 800px) {
     header nav {
         /* text-align:center; */
@@ -151,7 +160,8 @@ header nav a:last-child {
         margin-top:0;
     }
 
-}
+    }
+    
 header .logo {
   margin-top: 25px;
 }
@@ -167,9 +177,10 @@ header .logo {
   padding: 0px 75px;
 }
 
+/* Alignment */
 @media (max-width: 800px) {
     .cta .cta-text {
-       margin-left:18%;
+       margin-left:23%;
        margin-top:8%;
     }
 
@@ -195,6 +206,8 @@ header .logo {
   margin-top: 69px;
 }
 
+/* Get rid of unwanted image */
+
 @media (max-width: 800px) {
 
     .cta img {
@@ -209,6 +222,7 @@ header .logo {
   padding-top: 39px;
 }
 
+/* Added margins */
 @media (max-width: 800px) {
 
     .main-content {
@@ -232,6 +246,18 @@ header .logo {
   margin-right: 0;
 }
 
+/* Top of main content align */
+
+@media (max-width: 500px) {
+    .main-content .top-content .text-content {
+        display:block;
+        width:85%;
+        margin: 3% 0 0 3%;
+
+    }
+
+}
+
 .main-content .middle-img {
   margin-top: 45px;
 }
@@ -245,6 +271,18 @@ header .logo {
   width: 275px;
   display: inline-block;
   margin-right: 12px;
+}
+
+/* Bottom align */
+@media (max-width: 500px) {
+
+    .main-content .bottom-content .text-content {
+        display:inline-block;
+        width:85%;
+        margin: 3% 0 0 3%;
+
+    }
+
 }
 
 .main-content .bottom-content .text-content:last-child {
@@ -266,4 +304,3 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-
